@@ -1,0 +1,1 @@
+echo "Appending content" >> output.txt

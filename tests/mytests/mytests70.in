@@ -1,0 +1,1 @@
+true || echo "Will not print" && echo "Will print"

@@ -1,0 +1,7 @@
+mini$ actual
+mytests
+ref_imp_tests.sh
+run_mytests.sh
+test_cases.txt
+testmaker.py
+turn_to_tests_ref.py

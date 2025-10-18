@@ -1,0 +1,7 @@
+mini$ Backgrounded: 68130
+mini$ 
+sleep: invalid time interval: 1;
+sleep: invalid time interval: echo
+sleep: invalid time interval: Done
+usage: sleep number[unit] [...]
+Unit can be 's' (seconds, the default), m (minutes), h (hours), or d (days).

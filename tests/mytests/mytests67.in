@@ -1,0 +1,1 @@
+VAR1=hello VAR2=world echo $VAR1 $VAR2

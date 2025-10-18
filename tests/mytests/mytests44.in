@@ -1,0 +1,1 @@
+echo "Background test started"; sleep 2 & echo "Background test ended"

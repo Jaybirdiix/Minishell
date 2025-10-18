@@ -1,0 +1,141 @@
+echo hello
+
+echo -n hello
+
+ls
+
+pwd
+
+whoami
+
+date
+
+cat nonexistentfile
+
+echo $USER
+
+NAME=John echo $NAME
+
+echo $NAME
+
+NAME=John; echo $NAME
+
+export VAR1=test
+
+echo $VAR1
+
+unset VAR1; echo $VAR1
+
+echo hello > output.txt
+
+cat < output.txt
+
+echo world >> output.txt
+
+cat output.txt
+
+cat nonexistentfile > output.txt
+
+echo hello > /dev/null
+
+cat < /dev/null
+
+cat << EOF This is a test. EOF
+
+cat << EOF > heretest.txt Line 1 Line 2 EOF
+
+cat heretest.txt
+
+echo hello | tr 'a-z' 'A-Z'
+
+ls | sort
+
+echo "hello world" | grep hello
+
+echo "one two three" | awk '{print $2}'
+
+cat output.txt | wc -l
+
+echo "1 2 3" | xargs -n 1 echo
+
+true && echo "Success"
+
+false && echo "This should not print"
+
+false || echo "Failure handled"
+
+true || echo "This should not print"
+
+(true && false) || echo "Condition handled"
+
+(false || true) && echo "Condition passed"
+
+(echo "Subcommand test")
+
+(cd /; pwd)
+
+pwd
+
+(ls | grep test)
+
+VAR=123; (echo $VAR)
+
+(VAR=123; echo $VAR)
+
+sleep 2 &
+
+echo "Background test started"; sleep 2 & echo "Background test ended"
+
+sleep 1; echo "Done" &
+
+wait
+
+echo "First command"; echo "Second command"
+
+echo "Start"; sleep 1; echo "End"
+
+echo "Test" && echo "Passed" || echo "Failed"
+
+cd /tmp; pwd
+
+cd -
+
+pushd /; pwd
+
+popd; pwd
+
+cd nonexistent_dir
+
+true; echo $?
+
+false; echo $?
+
+ls nonexistentfile; echo $?
+
+(exit 5); echo $?
+
+nonexistentcommand
+
+./unexecutablefile
+
+cat nonexistentfile > output.txt
+
+cd /root
+
+echo "Overwriting content" > output.txt
+
+echo "Appending content" >> output.txt
+
+cat output.txt
+
+VAR=test (echo $VAR)
+
+VAR1=hello VAR2=world echo $VAR1 $VAR2
+
+(cd /tmp && ls) | grep somefile
+
+echo "A" && false && echo "B"
+
+true || echo "Will not print" && echo "Will print"
+
+rm output.txt heretest.txt
